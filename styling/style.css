@@ -1,0 +1,32 @@
+:root{
+   --white: #ffffff;
+   --black: #000000;
+   --primary-color-60:#caff33;
+   --primary-color-hover:#b5e62e;
+   --green-90:#f2ffcc;
+   --green-65:#d1ff4c;
+   --white-90:#e4e4e7;
+   --white-99:#fcfcfd;
+   --grey-10:#191919;
+   --grey-11:#1c1c1c;
+   --grey-15:#262626;
+   --grey-35:#59595a;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   font-family: 'Lexend', sans-serif;
+}
+
+
+/* This handles the mobile menu toggle without JavaScript */
+        #menu-toggle:checked ~ #menu {
+            display: block;
+        }
+
+        /* Navbar */
+
+        /* Button */
+

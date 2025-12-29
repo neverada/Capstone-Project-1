@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bank Layout</title>
+    <link rel="stylesheet" href="styling/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[--grey-10]">
+    <input type="checkbox" id="mobile-menu-toggle" class="peer hidden">
+
+    <!-- Navigation Bar -->
+    <!-- <nav class="flex bg-(--grey-11) sticky top-[46px] z-50 items-center justify-between px-8.5 py-5 border-b rounded-[100px]">
+       
+        <div class="flex items-center space-x-4">
+            <img src="assets/logo.png" alt="Bank Logo" class="h-8 w-8">
+            <span class="text-(--grey-1) text-lg font-semibold">MyBank</span>
+        </div>
+
+       
+        <div class="flex space-x-6">
+            <a href="#" class="text-(--grey-3) hover:text-(--grey-1) font-medium">Accounts</a>
+            <a href="#" class="text-(--grey-3) hover:text-(--grey-1) font-medium">Transfers</a>
+            <a href="#" class="text-(--grey-3) hover:text-(--grey-1) font-medium">Payments</a>
+            <a href="#" class="text-(--grey-3) hover:text-(--grey-1) font-medium">Settings</a>
+        </div>
+
+       
+        <div class="flex items-center space-x-4">
+            <button class="text-(--grey-3) hover:text-(--grey-1) font-medium">Help</button>
+            <button class="bg-(--blue-5) text-white px-4 py-2 rounded hover:bg-(--blue-6) font-medium">Login</button>   
+      
+
+       
+    </nav> -->
+
+    <nav
+        class="max-w-[1596px] mx-2 bg-[--grey-11] border border-[--grey-15] rounded-[100px] py-5 px-8 flex items-center justify-between mt-[12px] sticky z-50 ">
+        <!-- Logo Section -->
+        <div>
+            <div class="flex items-center space-x-4">
+                <img src="assets/Logo(2).png" alt="Bank Logo">
+            </div>
+        </div>
+        <!-- Navigation Links -->
+        <div class="flex  gap-2 hidden md:flex">
+            <a href="#" class="text-white rounded-full text-sm font-medium bg-[--grey-15] px-6 py-2 transition">Home</a>
+            <a href="#" class="text-white rounded-full text-sm font-medium hover:bg-[--grey-15] px-6 py-2 transition">Careers</a>
+            <a href="#" class="text-white rounded-full text-sm font-medium hover:bg-[--grey-15] px-6 py-2 transition">About</a>
+            <a href="#" class="text-white rounded-full text-sm font-medium hover:bg-[--grey-15] px-6 py-2 transition">Security</a>
+        </div>
+        <!-- Login Button -->
+        <div class="flex gap-2 items-center hidden md:flex">
+            <a href="#" class="text-white rounded-full text-sm font-medium hover:bg-[--grey-15] px-6 py-2 transition">Sign Up</a>
+            <button
+                class="bg-[--primary-color-60] text-black px-6 py-2 rounded-full hover:bg-[--primary-color-hover] font-medium hover:text-white transition">Login</button>
+        </div>
+        <!-- Hamburger Icon  -->
+        <label for="mobile-menu-toggle" class="md:hidden text-black cursor-pointer p-2 px-3">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Pill-shaped background (Green-600/Lime) -->
+                <rect width="48" height="48" rx="24" fill="#CAFF33" />
+
+                <!-- Staggered black lines -->
+                <!-- Top line: longest -->
+                <line x1="14" y1="18" x2="34" y2="18" stroke="black" stroke-width="2.5" stroke-linecap="round" />
+                <!-- Middle line: medium -->
+                <line x1="14" y1="24" x2="30" y2="24" stroke="black" stroke-width="2.5" stroke-linecap="round" />
+                <!-- Bottom line: shortest -->
+                <line x1="14" y1="30" x2="26" y2="30" stroke="black" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+        </label>
+
+
+
+    </nav>
+     <!--  The Mobile Menu Overlay (Dark background) -->
+    <label for="mobile-menu-toggle" class="fixed inset-0 bg-black/50 z-40 hidden peer-checked:block backdrop-blur-sm transition-opacity"></label>
+
+    <!-- 4. The Mobile Sidebar (Slides in from Right) -->
+    <div class="fixed top-0 right-0 h-full w-64 bg-[--grey-11] z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-in-out border-l border-[--grey-15] shadow-2xl">
+        
+        <!-- Close Button Area -->
+        <div class="flex justify-end p-6">
+            <label for="mobile-menu-toggle" class="text-white cursor-pointer hover:text-[--primary-color-60]">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </label>
+        </div>
+
+        <!-- Mobile Links Stack -->
+        <div class="flex flex-col px-6 space-y-4">
+            <a href="#" class="text-white text-lg font-medium hover:text-[--primary-color-60]">Home</a>
+            <a href="#" class="text-gray-400 text-lg font-medium hover:text-white">Careers</a>
+            <a href="#" class="text-gray-400 text-lg font-medium hover:text-white">About</a>
+            <a href="#" class="text-gray-400 text-lg font-medium hover:text-white">Security</a>
+            
+            <div class="h-px bg-[--grey-15] my-4"></div> <!-- Divider Line -->
+            
+            <a href="#" class="text-white text-lg font-medium hover:text-[--primary-color-60]">Sign Up</a>
+            <button class="w-full bg-[--primary-color-60] text-black px-6 py-3 rounded-full font-bold mt-2">Login</button>
+        </div>
+    </div>
+    <hero class="flex px-8 py-2">
+
+
+    </hero>
+</body>
+
+</html>

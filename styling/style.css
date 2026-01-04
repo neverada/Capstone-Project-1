@@ -1,5 +1,6 @@
 :root{
    --white: #ffffff;
+   --white-90:#e4e4e7;
    --black: #000000;
    --primary-color-60:#caff33;
    --primary-color-hover:#b5e62e;
@@ -11,6 +12,7 @@
    --grey-11:#1c1c1c;
    --grey-15:#262626;
    --grey-35:#59595a;
+   --grey-70:#B3B3B3;
 }
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 *{
@@ -18,15 +20,15 @@
    padding:0;
    box-sizing: border-box;
    font-family: 'Lexend', sans-serif;
+   overflow-x: hidden;
 }
 
 
-/* This handles the mobile menu toggle without JavaScript */
-        #menu-toggle:checked ~ #menu {
-            display: block;
-        }
+/* Container */
+.hero-right-box{
 
-        /* Navbar */
+background: linear-gradient(214.85deg, rgba(26, 26, 26, 0) 0%, #1A1A1A 39.72%), url(asfalt-light.png), #1A1A1A;
+background-blend-mode: normal, screen, normal;
 
-        /* Button */
+}
 

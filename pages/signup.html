@@ -37,7 +37,7 @@
     </div>
     <!-- Login Button -->
     <div class="flex gap-2 items-center hidden md:flex">
-      <a href="../pages/signup.html" class="text-white rounded-full text-sm font-medium hover:bg-[--grey-15] px-6 py-2 transition">Sign
+      <a href="#" class="text-white rounded-full text-sm font-medium hover:bg-[--grey-15] px-6 py-2 transition">Sign
         Up</a>
       <button
         class="bg-[--primary-color-60] text-black px-6 py-2 rounded-full hover:bg-[--primary-color-hover] font-medium hover:text-white transition">Login</button>
@@ -118,7 +118,19 @@
       <form class="flex w-full max-w-[1026px] flex-col items-center gap-[40px]">
         <!-- Inputs Container -->
         <div class="flex w-full flex-col gap-[30px]">
-         
+          <!-- Row 1 -->
+          <div class="flex flex-col gap-[30px] md:flex-row">
+            <input 
+              type="text" 
+              placeholder="Enter First Name" 
+              class="h-[75px] py-2 flex-1 rounded-[88px] border border-[--grey-15] bg-[--grey-10] px-6 text-[18px] text-[--grey-35] placeholder:text-[--grey-35] focus:border-[--primary-color-60] focus:outline-none" 
+            />
+            <input 
+              type="text" 
+              placeholder="Enter Last Name" 
+              class="h-[75px] py-2 flex-1 rounded-[88px] border border-[--grey-15] bg-[--grey-10] px-6 text-[18px] text-[--grey-35] placeholder:text-[--grey-35] focus:border-[--primary-color-60] focus:outline-none" 
+            />
+          </div>
           <!-- Row 2 -->
           <div class="flex flex-col gap-[30px] md:flex-row">
             <input 
@@ -140,7 +152,6 @@
               </button>
             </div>
           </div>
-          <div class="flex justify-center align-center text-white underline">Forgot Password</div>
         </div>
 
         <!-- Buttons & Social (Centered column, max-width 518px) -->

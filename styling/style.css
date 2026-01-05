@@ -13,6 +13,7 @@
    --grey-15:#262626;
    --grey-35:#59595a;
    --grey-70:#B3B3B3;
+   --grey-75:#BFBFBF;
 }
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 *{
@@ -29,6 +30,53 @@
 
 background: linear-gradient(214.85deg, rgba(26, 26, 26, 0) 0%, #1A1A1A 39.72%), url(asfalt-light.png), #1A1A1A;
 background-blend-mode: normal, screen, normal;
+
+}
+/* Fade Out Left */
+.fade-left{
+  
+
+position: absolute;
+width: 556px;
+height: 349px;
+left: 0px;
+top: calc(50% - 349px/2 - 0.5px);
+
+background: linear-gradient(270deg, rgba(25, 25, 25, 0) 0%, #191919 105.84%);
+mix-blend-mode: normal;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 3;
+
+}
+.fade-right{
+   /* Fade Out Right */
+
+position: absolute;
+width: 480px;
+height: 349px;
+right: 1px;
+top: calc(50% - 349px/2 - 0.5px);
+
+background: linear-gradient(270deg, #191919 10.8%, rgba(25, 25, 25, 0) 105.84%);
+mix-blend-mode: normal;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+z-index: 4;
+}
+
+.asphalt-bg{
+   
+
+background: linear-gradient(267.5deg, #1C1C1C 40.67%, rgba(28, 28, 28, 0) 99.81%), url(asfalt.png), #1C1C1C;
+background-blend-mode: normal, screen, normal;
+
 
 }
 
